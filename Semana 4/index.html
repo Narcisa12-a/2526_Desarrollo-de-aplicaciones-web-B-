@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Tronos vs El Señor de los Anillos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-got">
+            <div class="container">
+                <a class="navbar-brand" href="#inicio">Fantasía Épica</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#comparacion">Comparación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#detalles">Detalles Adicionales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#formulario">Tu Opinión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container text-center mt-5 mb-3 p-4 rounded-3 bg-header" id="inicio">
+            <h1><span class="text-got">Juego de Tronos</span> vs <span class="text-lotr">El Señor de los Anillos</span></h1>
+            <p class="text-muted">La batalla de las grandes sagas de fantasía épica</p>
+        </div>
+    </header>
+    <main class="container mb-5" id="comparacion">
+        <h2 class="text-center mb-4 text-titulo">Universos Fantásticos</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-lg card-general">
+                    <div class="img-container">
+                        <img src="assets/img/LOTR-GOT.jpg" class="card-img-top img-fluid" alt="Comparación de Juego de Tronos y LOTR">
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title text-titulo">Fantasía Épica Definida</h3>
+                        <p class="card-text">Ambas sagas han marcado generaciones con sus mundos vastos, personajes complejos y conflictos que definen el bien y el mal — aunque con tonos y objetivos muy diferentes.</p>
+                        <a class="btn btn-general" data-bs-toggle="collapse" href="#collapseGeneral" role="button">
+                            Ver más detalles
+                        </a>
+                        <div class="collapse mt-3" id="collapseGeneral">
+                            <div class="card card-body card-collapse">
+                                Juego de Tronos se centra en la política, la traición y la supervivencia en un mundo sin magia palpable. El Señor de los Anillos, por su parte, es una historia de heroísmo, amistad y la lucha contra el mal absoluto, con magia como elemento central.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-lg card-got">
+                    <div class="img-container">
+                        <img src="assets/img/7892f8cc-05bc-4b7b-88b2-d7cbd553537c_16-9-discover-aspect-ratio_default_0.jpg" class="card-img-top img-fluid" alt="Juego de Tronos">
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title text-got">Juego de Tronos</h3>
+                        <p class="card-text">Basada en la saga Canción de Hielo y Fuego de George R.R. Martin, es conocida por su crudeza, muertes inesperadas y intrigas políticas en Poniente.</p>
+                        <a class="btn btn-got" data-bs-toggle="collapse" href="#collapseGot" role="button">
+                            Ver más detalles
+                        </a>
+                        <div class="collapse mt-3" id="collapseGot">
+                            <div class="card card-body card-collapse">
+                                Estrenada en 2011, tuvo 8 temporadas. Sus personajes más icónicos son Jon Nieve, Daenerys Targaryen y Tyrion Lannister. Se caracteriza por su tono oscuro y su rechazo a los arquetipos de héroe tradicional.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-lg card-lotr">
+                    <div class="img-container">
+                        <img src="assets/img/1366_2000.jpeg" class="card-img-top img-fluid" alt="El Señor de los Anillos">
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title text-lotr">El Señor de los Anillos</h3>
+                        <p class="card-text">Basada en la novela de J.R.R. Tolkien, es la saga fundadora de la fantasía moderna, centrada en la lucha contra Sauron y la destrucción del Anillo Único.</p>
+                        <a class="btn btn-lotr" data-bs-toggle="collapse" href="#collapseLotr" role="button">
+                            Ver más detalles
+                        </a>
+                        <div class="collapse mt-3" id="collapseLotr">
+                            <div class="card card-body card-collapse">
+                                Las películas de Peter Jackson se estrenaron entre 2001 y 2003. Sus personajes más icónicos son Frodo Bolsón, Gandalf el Blanco y Aragorn. Se caracteriza por su mensaje de esperanza y su mundo profundamente detallado.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="py-5 bg-detalles" id="detalles">
+        <div class="container">
+            <h2 class="text-center mb-4 text-titulo">Puntos Clave de Comparación</h2>
+            <div class="d-flex flex-wrap justify-content-center gap-4">
+                <div class="p-4 rounded-3 shadow-sm comparacion-item item-got">
+                    <h4 class="text-got">Mundo</h4>
+                    <p><strong>Got:</strong> Poniente (mundo más realista, menos magia)</p>
+                    <p><strong>LOTR:</strong> Tierra Media (mundo fantástico, magia central)</p>
+                </div>
+                <div class="p-4 rounded-3 shadow-sm comparacion-item item-lotr">
+                    <h4 class="text-lotr">Tono</h4>
+                    <p><strong>Got:</strong> Oscuro, cínico, traiciones constantes</p>
+                    <p><strong>LOTR:</strong> Optimista, heroico, foco en la amistad</p>
+                </div>
+                <div class="p-4 rounded-3 shadow-sm comparacion-item item-general">
+                    <h4 class="text-titulo">Objetivo Principal</h4>
+                    <p><strong>Got:</strong> Conquistar el Trono de Hierro</p>
+                    <p><strong>LOTR:</strong> Destruir el Anillo Único y derrotar a Sauron</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container my-5" id="formulario">
+        <h2 class="text-center mb-4 text-titulo">Cuéntanos Cuál Te Gusta Más</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form class="bg-form p-5 rounded-3 shadow-lg">
+                    <div class="form-group mb-3">
+                        <label for="nombre" class="form-label text-titulo">Tu Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email" class="form-label text-titulo">Tu Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Escribe tu email" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="saga-fav" class="form-label text-titulo">¿Cuál saga te gusta más?</label>
+                        <select class="form-control" id="saga-fav" required>
+                            <option value="">Elige una opción</option>
+                            <option value="got">Juego de Tronos</option>
+                            <option value="lotr">El Señor de los Anillos</option>
+                            <option value="ambas">Ambas igual</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="form-label text-titulo">¿Qué aspecto valoras más en una saga?</label>
+                        <div class="d-flex flex-wrap gap-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="aspecto-fav" id="historia" value="historia" required>
+                                <label class="form-check-label text-titulo" for="historia">Historia</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="aspecto-fav" id="personajes" value="personajes">
+                                <label class="form-check-label text-titulo" for="personajes">Personajes</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="aspecto-fav" id="mundo" value="mundo">
+                                <label class="form-check-label text-titulo" for="mundo">Mundo ficticio</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="aspecto-fav" id="batallas" value="batallas">
+                                <label class="form-check-label text-titulo" for="batallas">Batallas</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="comentarios" class="form-label text-titulo">¿Por qué te gusta esa saga y ese aspecto en particular?</label>
+                        <textarea class="form-control" id="comentarios" rows="4" placeholder="Escribe tu razón aquí..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-general w-100">Enviar Mi Opinión</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PIE DE PÁGINA -->
+    <footer class="bg-footer text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2025 Comparación de Sagas de Fantasía</p>
+            <div class="mt-2">
+                <a href="#" class="text-got me-3">Acerca de</a>
+                <a href="#" class="text-lotr me-3">Fuentes</a>
+                <a href="#" class="text-titulo">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script de Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

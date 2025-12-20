@@ -1,0 +1,50 @@
+/* ------------------------------ */
+/* 1. COLORES BASADOS EN LAS SAGAS */
+/* ------------------------------ */
+:root {
+    /* Juego de Tronos */
+    --color-got-oscuro: #1a2530; /* Azul negro */
+    --color-got-rojo: #c70039; /* Rojo Lannister */
+    --color-got-azul: #2c3e50; /* Azul Stark */
+
+    /* El Señor de los Anillos */
+    --color-lotr-verde: #2e5939; /* Verde Lothlórien */
+    --color-lotr-dorado: #d4af37; /* Dorado Aragorn */
+    --color-lotr-marrón: #8b4513; /* Marrón Tierra Media */
+
+    /* General */
+    --color-general-azul: #3498db;
+    --color-general-fondo: #f5f5f5;
+    --color-titulo: #2c3e50;
+}
+
+/* Colores de texto */
+.text-got { color: var(--color-got-rojo) !important; }
+.text-lotr { color: var(--color-lotr-verde) !important; }
+.text-titulo { color: var(--color-titulo) !important; }
+
+/* Colores de fondo */
+.bg-got { background-color: var(--color-got-oscuro) !important; }
+.bg-header { background-color: var(--color-general-fondo) !important; border: 2px solid var(--color-general-azul); }
+.bg-detalles { background-color: #e8f4f8 !important; }
+.bg-form { background-color: #f9f9f9 !important; border: 2px solid var(--color-general-azul); }
+.bg-footer { background-color: var(--color-got-azul) !important; }
+
+
+/* ------------------------------ */
+/* 2. IGUALAR TAMAÑO DE TODAS LAS IMÁGENES */
+/* ------------------------------ */
+.img-container {
+    height: 220px; /* Altura fija para todas las imágenes */
+    overflow: hidden; /* Ocultar parte de la imagen que se salga */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ajustar imagen sin deformarla */
+    transition: transform 0.5s
+}
