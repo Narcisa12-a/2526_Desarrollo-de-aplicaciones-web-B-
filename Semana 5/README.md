@@ -11,7 +11,7 @@ Permite al usuario agregar imágenes mediante URLs, seleccionarlos y eliminarlos
 2. CSS3
 3. JavaScript
 # Uso
-1. Ingrese la URL de una imagen.
-2. Presione el botón "Agregar Imagen".
-3. Haga clic sobre una imagen para seleccionarla.
-4. Presione "Eliminar Imagen" para borrarla.
+1. Ingrese la URL de una imagen
+2. Presione el botón "Agregar Imagen"
+3. Haga clic sobre una imagen para seleccionarla
+4. Presione "Eliminar Imagen" para borrarla
