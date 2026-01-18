@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario con Validación JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Contenedor principal del formulario -->
+    <h1>Formulario de Registro</h1>
+    <!-- Título principal -->
+    <form id="formulario">
+        <label>Nombre</label>
+        <!-- Etiqueta descriptiva -->
+        <input type="text" id="nombre">
+        <!-- Campo de texto para el nombre -->
+        <small class="error" id="errorNombre"></small>
+        <!-- Mensaje de error dinámico -->
+
+        <label>Correo electrónico</label>
+        <input type="email" id="correo">
+        <small class="error" id="errorCorreo"></small>
+
+        <label>Contraseña</label>
+        <input type="password" id="password">
+        <small class="error" id="errorPassword"></small>
+
+        <label>Confirmar contraseña</label>
+        <input type="password" id="confirmarPassword">
+        <small class="error" id="errorConfirmar"></small>
+
+        <label>Edad</label>
+        <input type="number" id="edad">
+        <small class="error" id="errorEdad"></small>
+
+        <div class="botones">
+            <!-- Contenedor de botones -->
+            <button type="submit" id="btnEnviar" disabled>
+                Enviar
+            </button>
+            <!-- Botón de envío deshabilitado por defecto -->
+            <button type="reset">
+                Reiniciar
+            </button>
+            <!-- Botón para limpiar el formulario -->
+        </div>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
