@@ -1,3 +1,4 @@
+/*URLS DE IMAGENES CARGADAS DESDE EL CODIGO*/
 document.addEventListener("DOMContentLoaded", () => {
 
   const imageUrls = [
