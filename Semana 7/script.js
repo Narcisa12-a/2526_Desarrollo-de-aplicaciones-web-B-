@@ -1,63 +1,66 @@
-// Arreglo que contiene los productos de anime
+// Arreglo de productos (datos iniciales)
 const productos = [
     {
-        nombre: "Figura de Tanjiro",
-        precio: "$25.00",
-        descripcion: "Figura coleccionable de Demon Slayer"
+        nombre: "Espada Nichirin",
+        precio: 120,
+        descripcion: "Espada utilizada por los cazadores de demonios."
     },
     {
         nombre: "Capa de Akatsuki",
-        precio: "$30.00",
-        descripcion: "Capa inspirada en Naruto Shippuden"
+        precio: 80,
+        descripcion: "Capa negra con nubes rojas del anime Naruto."
     },
     {
         nombre: "Sombrero de Luffy",
-        precio: "$12.00",
-        descripcion: "Sombrero icónico de One Piece"
+        precio: 40,
+        descripcion: "Sombrero de paja del capitán de One Piece."
     }
 ];
-
-// Referencia al elemento <ul> del HTML
+// Seleccionamos la lista del HTML
 const lista = document.getElementById("listaProductos");
-
-// Función que renderiza los productos en la lista
+// Función para mostrar los productos en pantalla
 function mostrarProductos() {
-    // Limpia la lista antes de volver a mostrarla
+    // Limpiamos la lista para evitar que se repitan
     lista.innerHTML = "";
-
-    // Recorre cada producto del arreglo
+    // Recorremos el arreglo de productos
     productos.forEach(producto => {
-        // Crea un nuevo elemento <li>
-        const li = document.createElement("li");
-
-        // Plantilla básica con la información del producto
-        li.innerHTML = `
+        // Creamos un elemento <li>
+        const item = document.createElement("li");
+        // Contenido del producto
+        item.innerHTML = `
             <strong>${producto.nombre}</strong><br>
-            Precio: ${producto.precio}<br>
+            Precio: $${producto.precio}<br>
             ${producto.descripcion}
         `;
-
-        // Agrega el producto a la lista
-        lista.appendChild(li);
+        // Agregamos el producto a la lista
+        lista.appendChild(item);
     });
 }
-
-// Muestra los productos automáticamente al cargar la página
+// Mostrar productos al cargar la página
 mostrarProductos();
-
-// Evento del botón para agregar un nuevo producto
+// Botón para agregar nuevos productos
 document.getElementById("btnAgregar").addEventListener("click", () => {
-
-    // Nuevo producto de ejemplo (anime)
+    // Obtenemos los valores de los inputs
+    const nombre = document.getElementById("nombre").value;
+    const precio = document.getElementById("precio").value;
+    const descripcion = document.getElementById("descripcion").value;
+    // Validación básica
+    if (nombre === "" || precio === "" || descripcion === "") {
+        alert("Por favor completa todos los campos");
+        return;
+    }
+    // Creamos un nuevo objeto producto
     const nuevoProducto = {
-        nombre: "Espada Nichirin",
-        precio: "$40.00",
-        descripcion: "Espada inspirada en Demon Slayer"
+        nombre: nombre,
+        precio: precio,
+        descripcion: descripcion
     };
-
-    // Agrega el nuevo producto al arreglo
+    // Agregamos el producto al arreglo
     productos.push(nuevoProducto);
-
-    // Vuelve a renderizar la lista
+    // Volvemos a mostrar la lista actualizada
     mostrarProductos();
+    // Limpiamos los campos
+    document.getElementById("nombre").value = "";
+    document.getElementById("precio").value = "";
+    document.getElementById("descripcion").value = "";
 });
