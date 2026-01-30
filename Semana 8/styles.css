@@ -1,0 +1,18 @@
+body{
+    background-color:#ffe4f0;
+    }
+    h1,h2{
+    color:#d63384;
+    }
+    .carousel img{
+    height:400px;
+    object-fit:cover;
+    }
+    .btn-primary{
+    background-color:#ff69b4;
+    border:none;
+    }
+
+    .btn-primary:hover{
+    background-color:#ff1493;
+    }
