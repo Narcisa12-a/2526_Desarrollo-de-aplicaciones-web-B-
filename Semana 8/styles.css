@@ -4,15 +4,18 @@ body{
     h1,h2{
     color:#d63384;
     }
-    .carousel img{
-    height:400px;
+    /* Ajuste del carrusel */
+    .carrusel-img{
+    height:450px;
     object-fit:cover;
+    border-radius:10px;
     }
+    /* Botón Barbie */
     .btn-primary{
     background-color:#ff69b4;
     border:none;
     }
-
     .btn-primary:hover{
     background-color:#ff1493;
     }
+
