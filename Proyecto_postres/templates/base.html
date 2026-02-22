@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cat Cake</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Cat Cake 🐱🎂</h1>
+    </header>
+
+    <nav>
+        <a href="/">Inicio</a>
+        <a href="/about">Acerca de</a>
+        <a href="/productos">Productos</a>
+    </nav>
+
+    <hr>
+
+    {% block content %}
+    {% endblock %}
+
+    <hr>
+
+    <footer>
+    <p>© 2026 Cat Cake - Todos los derechos reservados</p>      
+    </footer>
+  </body>
+  </html>

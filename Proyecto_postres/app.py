@@ -1,21 +1,22 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
-# Ruta principal
 @app.route("/")
 def inicio():
-    return "Bienvenido a Cat Cake – Tienda Online de Postres Artesanales. 🐱🍰"
+    return render_template("index.html")
 
-    # Ruta dinámica ejemplo cliente
-    @app.route("/cliente/<nombre>")
-    def cliente(nombre):
-        return f"Hola {nombre}, gracias por visitar Cat Cake."
+    @app.route("/about")
+    def about():
+        return render_template("about.html")
 
-        # Ruta dinámica ejemplo producto
-        @app.route("/postre/<nombre>")
-        def postre(nombre):
-            return f"Postre seleccionado: {nombre} – Disponible para pedido."
+        @app.route("/productos")
+        def productos():
+            lista_productos = [
+                    {"nombre": "Bolitas de chocolate", "precio": 1.00},
+                            {"nombre": "Postre en vaso", "precio": 2.50}
+                                ]
+                                    return render_template("productos.html", productos=lista_productos)
 
-            if __name__ == "__main__":
-                app.run(debug=True)
+                                    if __name__ == "__main__":
+                                        app.run(debug=True)
