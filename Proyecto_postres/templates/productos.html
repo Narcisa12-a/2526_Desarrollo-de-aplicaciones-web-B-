@@ -10,3 +10,25 @@
 </ul>
 
 {% endblock %}
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Inventario de Postres</h2>
+
+<ul>
+
+{% for p in productos %}
+
+<li>
+
+{{p.nombre}} - ${{p.precio}} - Cantidad: {{p.cantidad}}
+
+</li>
+
+{% endfor %}
+
+</ul>
+
+{% endblock %}

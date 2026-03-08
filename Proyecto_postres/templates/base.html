@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Cat Cake</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+<title>Cat Cake</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
 </head>
+
 <body>
-    <header>
-        <h1>Cat Cake 🐱🎂</h1>
-    </header>
 
-    <nav>
-        <a href="/">Inicio</a>
-        <a href="/about">Acerca de</a>
-        <a href="/productos">Productos</a>
-    </nav>
+<h1>🍰 Cat Cake - Tienda de Postres</h1>
 
-    <hr>
+<nav>
 
-    {% block content %}
-    {% endblock %}
+<a href="/">Inicio</a>
+<a href="/productos">Productos</a>
+<a href="/agregar">Agregar</a>
+<a href="/contactos">Contactos</a>
 
-    <hr>
+</nav>
 
-    <footer>
-    <p>© 2026 Cat Cake - Todos los derechos reservados</p>      
-    </footer>
-  </body>
-  </html>
+<hr>
+
+{% block content %}
+{% endblock %}
+
+<footer>
+
+<p>Cat Cake 2026</p>
+
+</footer>
+
+</body>
+</html>

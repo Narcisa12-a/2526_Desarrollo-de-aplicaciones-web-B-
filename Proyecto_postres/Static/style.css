@@ -1,18 +1,15 @@
-body {
-    font-family: Arial;
-    background-color: #fff5f8;
-    text-align: center;
-}
+body{
 
-nav a {
+    font-family: Arial;
+    margin: 40px;
+    background-color: #fff5f7;
+
+    }
+
+    nav a{
+
     margin: 10px;
     text-decoration: none;
     color: #d63384;
-    font-weight: bold;
-}
 
-footer {
-    margin-top: 20px;
-    font-size: 12px;
-                    
-}
+    }

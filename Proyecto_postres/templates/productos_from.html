@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Agregar Postre</h2>
+
+<form method="POST">
+
+<label>Nombre</label>
+<input type="text" name="nombre">
+
+<br><br>
+
+<label>Precio</label>
+<input type="number" name="precio">
+
+<br><br>
+
+<label>Cantidad</label>
+<input type="number" name="cantidad">
+
+<br><br>
+
+<button type="submit">Guardar</button>
+
+</form>
+
+{% endblock %}
